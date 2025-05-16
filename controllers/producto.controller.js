@@ -1,4 +1,5 @@
 
+
 const productos = [
     { id: 1, nombre: 'Celular X2', pais: 'España' },
     { id: 2, nombre: 'Nintendo SW', pais: 'España' },
@@ -10,6 +11,7 @@ const productos = [
 
 module.exports = {
     getAll: (req, res) => {
+        console.log('ggetall');
         res.json(productos);
     },
     getById: (req, res) => {
